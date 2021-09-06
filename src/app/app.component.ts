@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'rest-countries-api-project';
+  mode = true;
+
+  changeMode() {
+    this.mode = !this.mode;
+  }
 }
