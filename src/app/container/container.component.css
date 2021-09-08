@@ -1,0 +1,13 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(0, 0%, 98%);
+    border-top: 1px solid #ccc;
+    box-shadow: 0 -3px 5px -5px #333;
+    padding: 2.5rem 5rem;
+}
+
+
+.header_input{
+    border: 1px solid #ccc;
+}
