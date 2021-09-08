@@ -1,28 +1,7 @@
-<p>
-  <mat-toolbar
-  [ngClass]="mode ? 'toolBarColorsLight toolBar' : 'toolBarColorsDark toolBar'"
+<div>
+  <app-the-header
+    [mode]="mode"
+    (modeClicked)="changeMode()"
   >
-  <span>Where in the world?</span>
-  <div>
-    <button
-      *ngIf="mode; else elseBlock"
-      mat-icon-button 
-      matTooltip="Turn the dark mode on"
-      aria-label="moon icon for dark mode"
-      (click)="changeMode()"
-      >
-      <mat-icon>brightness_3</mat-icon>
-    </button>
-    <ng-template #elseBlock>
-      <button
-        mat-icon-button
-        matTooltip="Turn the light mode on"
-        aria-label="sun icon for light mode"
-        (click)="changeMode()"
-        >
-        <mat-icon>brightness_low</mat-icon>
-      </button>
-    </ng-template>
-  </div>
-</mat-toolbar>
-</p>
+  </app-the-header>
+</div>
